@@ -17,7 +17,7 @@ func TestHandleRoot(t *testing.T) {
 		t.Errorf("expected status %d, got %d", http.StatusOK, rec.Code)
 	}
 
-	expected := "Hello, RRRJASO  N"
+	expected := "Hello, RRRJAS O  N"
 	if rec.Body.String() != expected {
 		t.Errorf("expected body %q, got %q", expected, rec.Body.String())
 	}
